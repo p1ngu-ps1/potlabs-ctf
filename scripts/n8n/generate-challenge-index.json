@@ -1,0 +1,107 @@
+{
+  "name": "Regenerate Challenge Index",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "1",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "command": "node scripts/generate_challenge_index.mjs",
+        "workingDirectory": "{{ $json[\"repoPath\"] || \"/workspace\" }}"
+      },
+      "id": "2",
+      "name": "Generate Index",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [500, 220]
+    },
+    {
+      "parameters": {
+        "command": "git add services/frontend/public/challenges/index.json",
+        "workingDirectory": "{{ $json[\"repoPath\"] || \"/workspace\" }}"
+      },
+      "id": "3",
+      "name": "Git Add",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [740, 220]
+    },
+    {
+      "parameters": {
+        "command": "git commit -m \"chore: regen challenge index\" || echo 'No changes to commit'",
+        "workingDirectory": "{{ $json[\"repoPath\"] || \"/workspace\" }}"
+      },
+      "id": "4",
+      "name": "Git Commit",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [980, 220]
+    },
+    {
+      "parameters": {
+        "command": "git push",
+        "workingDirectory": "{{ $json[\"repoPath\"] || \"/workspace\" }}"
+      },
+      "id": "5",
+      "name": "Git Push",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1220, 220]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Generate Index",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Index": {
+      "main": [
+        [
+          {
+            "node": "Git Add",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Git Add": {
+      "main": [
+        [
+          {
+            "node": "Git Commit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Git Commit": {
+      "main": [
+        [
+          {
+            "node": "Git Push",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "version": 2,
+  "meta": {
+    "templateValues": {}
+  }
+}

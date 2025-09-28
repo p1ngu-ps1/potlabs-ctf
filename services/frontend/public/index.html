@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infernal Prompt Trials</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="landing">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <h1 class="brand-title">Potlabs CTF</h1>
+          <p class="brand-subtitle">Micro CTF Vault · client-side only</p>
+        </div>
+        <nav class="nav-group" aria-label="Primary">
+          <a class="nav-item" href="index.html" aria-current="page">
+            <span class="icon" aria-hidden="true">🏠</span>
+            Trials
+          </a>
+          <a class="nav-item" href="about.html">
+            <span class="icon" aria-hidden="true">📜</span>
+            About
+          </a>
+        </nav>
+        <footer>
+          Rotate testing keys · Have fun · Learn
+        </footer>
+      </aside>
+
+      <main class="main">
+        <div class="top-bar">
+          <label class="search">
+            <span class="icon" aria-hidden="true">🔍</span>
+            <input id="search" type="search" placeholder="Search prompts, tags, objectives…" />
+          </label>
+        </div>
+
+        <section class="panel">
+          <h2>Harness</h2>
+          <div class="alert" role="alert">Keys remain in this browser tab. Purge them whenever you surface.</div>
+          <form id="api-form" class="form-grid" autocomplete="off">
+            <label for="model-name">OpenRouter Model Name</label>
+            <input id="model-name" name="model" type="text" placeholder="openrouter/guardian-mind-v1" required />
+
+            <label for="api-key">OpenRouter API Key</label>
+            <input id="api-key" name="apiKey" type="password" placeholder="sk-or-…" required />
+
+            <button type="button" id="purge-session" class="button-secondary">Purge Harness</button>
+          </form>
+          <p id="harness-status" class="harness-status" aria-live="polite">Harness not configured.</p>
+        </section>
+
+        <section class="panel">
+          <h2>Repository Trials</h2>
+          <p class="text-muted">Live mirror of `.md`, `.md5`, and `.txt` prompts from the configured GitHub vault. Crack one open to descend into a chat session.</p>
+          <p class="status-bar" id="catalog-status"></p>
+          <div id="ctf-list" class="ctf-catalog" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <div class="chat-overlay" id="chat-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="chat-window">
+        <div class="chat-header">
+          <h3 id="chat-title">Prompt Session</h3>
+          <button type="button" class="close-chat" id="close-chat">Close</button>
+        </div>
+        <div class="chat-body">
+          <div class="prompt-banner">
+            <div class="prompt-meta" id="chat-meta"></div>
+            <strong class="prompt-banner__label">Scenario System Prompt</strong>
+            <pre id="chat-prompt"></pre>
+          </div>
+          <div class="chat-log" id="chat-log" aria-live="polite"></div>
+        </div>
+        <form class="chat-input" id="chat-form">
+          <textarea id="chat-message" placeholder="Compose your containment response…" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="assets/app.js" type="module"></script>
+  </body>
+</html>

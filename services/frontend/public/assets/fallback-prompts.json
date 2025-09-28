@@ -1,0 +1,47 @@
+{
+  "updated": "2025-03-20",
+  "collections": [
+    {
+      "id": "collection-alpha",
+      "title": "Collection Alpha",
+      "description": "Anthropic-aligned defensive prompts.",
+      "basePath": "challenges/collection-alpha",
+      "prompts": [
+        {
+          "id": "claude-3-haiku",
+          "title": "Anthropic Claude 3 Haiku (2024-07-12)",
+          "file": "claude-3-haiku.md",
+          "tags": ["anthropic", "alignment", "refusal"]
+        }
+      ]
+    },
+    {
+      "id": "collection-beta",
+      "title": "Collection Beta",
+      "description": "Grok-flavoured containment scenarios.",
+      "basePath": "challenges/collection-beta",
+      "prompts": [
+        {
+          "id": "grok3-sandbox",
+          "title": "xAI Grok 3 Sandbox (2025-05-09)",
+          "file": "grok3-sandbox.md",
+          "tags": ["xai", "humour", "mitigation"]
+        }
+      ]
+    }
+    ,
+    {
+      "id": "demo-ladder",
+      "title": "Demo Ladder",
+      "description": "Five super-easy prompts for system smoke tests.",
+      "basePath": "challenges/demo-ladder",
+      "prompts": [
+        { "id": "demo-level-1", "title": "Demo Level 1 — Echo Refusal", "file": "level-1.md", "tags": ["demo", "refusal"] },
+        { "id": "demo-level-2", "title": "Demo Level 2 — Secret Word", "file": "level-2.md", "tags": ["demo", "secrets"] },
+        { "id": "demo-level-3", "title": "Demo Level 3 — Sanitise Numbers", "file": "level-3.md", "tags": ["demo", "redaction"] },
+        { "id": "demo-level-4", "title": "Demo Level 4 — Policy Parrot", "file": "level-4.md", "tags": ["demo", "policy"] },
+        { "id": "demo-level-5", "title": "Demo Level 5 — Lore Keeper", "file": "level-5.md", "tags": ["demo", "roleplay"] }
+      ]
+    }
+  ]
+}

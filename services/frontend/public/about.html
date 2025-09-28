@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infernal Prompt Trials · About</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="about">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <h1 class="brand-title">Infernal Trials</h1>
+          <p class="brand-subtitle">Micro CTF Vault · client-side only</p>
+        </div>
+        <nav class="nav-group" aria-label="Primary">
+          <a class="nav-item" href="index.html">
+            <span class="icon" aria-hidden="true">🏠</span>
+            Trials
+          </a>
+          <a class="nav-item" href="about.html" aria-current="page">
+            <span class="icon" aria-hidden="true">📜</span>
+            About
+          </a>
+        </nav>
+        <footer>
+          Trust the sandbox · export transcripts · report anomalies
+        </footer>
+      </aside>
+
+      <main class="main">
+        <div class="top-bar">
+          <h2 class="page-title">Briefing</h2>
+        </div>
+
+        <section class="about-grid">
+          <article class="panel">
+            <h2>Design Tenets</h2>
+            <ul>
+              <li>Two-page footprint to minimize surface area and keep focus on the prompts.</li>
+              <li>Night-drive UI: folder-grid layout, razor thin borders, minimalist chrome.</li>
+              <li>Static hosting friendly; all orchestration happens in the browser.</li>
+              <li>Repository-backed prompts for auditability and collaborative iteration.</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <h2>Safety Intent</h2>
+            <blockquote>
+              "Every simulated breach is a rehearsal for resilience. Keep logs, honour policy, and never test tactics on production systems."
+            </blockquote>
+            <p>
+              When you arm the console, credentials stay in local storage and are masked everywhere else. Sessions can be purged at any time. Chat conversations run against your chosen OpenRouter model with the selected prompt injected as the system message, so document mitigations as you iterate and export transcripts for peer review.
+            </p>
+          </article>
+        </section>
+
+        <footer class="footer">
+          stay curious · weaponize ethics · report anomalies responsibly
+        </footer>
+      </main>
+    </div>
+
+    <script src="assets/app.js" type="module"></script>
+  </body>
+</html>
