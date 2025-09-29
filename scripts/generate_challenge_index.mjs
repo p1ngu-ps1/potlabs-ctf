@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 
 const DEFAULT_CHALLENGE_DIR = path.resolve(
   __dirname,
-  "../services/frontend/public/challenges"
+  "../var/www/potlabs-ctf/challenges"
 );
 const DEFAULT_OUTPUT = path.join(DEFAULT_CHALLENGE_DIR, "index.json");
 const ALLOWED_EXTENSIONS = new Set([".md", ".md5", ".txt"]);
@@ -104,4 +104,3 @@ main().catch((error) => {
   console.error("Failed to generate challenge index:", error);
   process.exit(1);
 });
-
