@@ -2,45 +2,637 @@
   "updated": "2025-03-20",
   "collections": [
     {
-      "id": "collection-alpha",
-      "title": "Collection Alpha",
-      "description": "Anthropic-aligned defensive prompts.",
-      "basePath": "challenges/collection-alpha",
+      "id": "demo-ladder",
+      "title": "Demo Ladder",
+      "description": "",
+      "basePath": "challenges/demo-ladder",
       "prompts": [
         {
-          "id": "claude-3-haiku",
-          "title": "Anthropic Claude 3 Haiku (2024-07-12)",
-          "file": "claude-3-haiku.md",
-          "tags": ["anthropic", "alignment", "refusal"]
+          "id": "level-1",
+          "title": "Level 1",
+          "file": "level-1.md",
+          "tags": []
+        },
+        {
+          "id": "level-2",
+          "title": "Level 2",
+          "file": "level-2.md",
+          "tags": []
+        },
+        {
+          "id": "level-3",
+          "title": "Level 3",
+          "file": "level-3.md",
+          "tags": []
+        },
+        {
+          "id": "level-4",
+          "title": "Level 4",
+          "file": "level-4.md",
+          "tags": []
+        },
+        {
+          "id": "level-5",
+          "title": "Level 5",
+          "file": "level-5.md",
+          "tags": []
         }
       ]
     },
     {
-      "id": "collection-beta",
-      "title": "Collection Beta",
-      "description": "Grok-flavoured containment scenarios.",
-      "basePath": "challenges/collection-beta",
+      "id": "leaked-system-prompts-main",
+      "title": "Leaked System Prompts Main",
+      "description": "",
+      "basePath": "challenges/leaked-system-prompts-main",
       "prompts": [
         {
-          "id": "grok3-sandbox",
-          "title": "xAI Grok 3 Sandbox (2025-05-09)",
-          "file": "grok3-sandbox.md",
-          "tags": ["xai", "humour", "mitigation"]
+          "id": "ChatGLM4_20240821",
+          "title": "Chatglm4 20240821",
+          "file": "ChatGLM4_20240821.md",
+          "tags": []
+        },
+        {
+          "id": "ESTsoft-alan_20230920",
+          "title": "Estsoft Alan 20230920",
+          "file": "ESTsoft-alan_20230920.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-3-haiku_20240712",
+          "title": "Anthropic Claude 3 Haiku 20240712",
+          "file": "anthropic-claude-3-haiku_20240712.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-3-opus_20240712",
+          "title": "Anthropic Claude 3 Opus 20240712",
+          "file": "anthropic-claude-3-opus_20240712.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-3-sonnet_20240306",
+          "title": "Anthropic Claude 3 Sonnet 20240306",
+          "file": "anthropic-claude-3-sonnet_20240306.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-3-sonnet_20240311",
+          "title": "Anthropic Claude 3 Sonnet 20240311",
+          "file": "anthropic-claude-3-sonnet_20240311.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-3.5-sonnet_20240712",
+          "title": "Anthropic Claude 3.5 Sonnet 20240712",
+          "file": "anthropic-claude-3.5-sonnet_20240712.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-3.5-sonnet_20240909",
+          "title": "Anthropic Claude 3.5 Sonnet 20240909",
+          "file": "anthropic-claude-3.5-sonnet_20240909.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-3.5-sonnet_20241022",
+          "title": "Anthropic Claude 3.5 Sonnet 20241022",
+          "file": "anthropic-claude-3.5-sonnet_20241022.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-3.5-sonnet_20241122",
+          "title": "Anthropic Claude 3.5 Sonnet 20241122",
+          "file": "anthropic-claude-3.5-sonnet_20241122.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-3.7-sonnet_20250224",
+          "title": "Anthropic Claude 3.7 Sonnet 20250224",
+          "file": "anthropic-claude-3.7-sonnet_20250224.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-4-opus_20250522",
+          "title": "Anthropic Claude 4 Opus 20250522",
+          "file": "anthropic-claude-4-opus_20250522.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-4-opus_20250731",
+          "title": "Anthropic Claude 4 Opus 20250731",
+          "file": "anthropic-claude-4-opus_20250731.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-4-sonnet_20250522",
+          "title": "Anthropic Claude 4 Sonnet 20250522",
+          "file": "anthropic-claude-4-sonnet_20250522.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-4-sonnet_20250731 copy",
+          "title": "Anthropic Claude 4 Sonnet 20250731 Copy",
+          "file": "anthropic-claude-4-sonnet_20250731 copy.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-api-tool-use_20250119",
+          "title": "Anthropic Claude Api Tool Use 20250119",
+          "file": "anthropic-claude-api-tool-use_20250119.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude-opus_20240306",
+          "title": "Anthropic Claude Opus 20240306",
+          "file": "anthropic-claude-opus_20240306.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude_2.0_20240306",
+          "title": "Anthropic Claude 2.0 20240306",
+          "file": "anthropic-claude_2.0_20240306.md",
+          "tags": []
+        },
+        {
+          "id": "anthropic-claude_2.1_20240306",
+          "title": "Anthropic Claude 2.1 20240306",
+          "file": "anthropic-claude_2.1_20240306.md",
+          "tags": []
+        },
+        {
+          "id": "bolt.new_20241009",
+          "title": "Bolt.New 20241009",
+          "file": "bolt.new_20241009.md",
+          "tags": []
+        },
+        {
+          "id": "brave-leo-ai_20250903",
+          "title": "Brave Leo Ai 20250903",
+          "file": "brave-leo-ai_20250903.md",
+          "tags": []
+        },
+        {
+          "id": "canva-code_20250519",
+          "title": "Canva Code 20250519",
+          "file": "canva-code_20250519.md",
+          "tags": []
+        },
+        {
+          "id": "claude-artifacts_20240620",
+          "title": "Claude Artifacts 20240620",
+          "file": "claude-artifacts_20240620.md",
+          "tags": []
+        },
+        {
+          "id": "cluely-20250512",
+          "title": "Cluely 20250512",
+          "file": "cluely-20250512.md",
+          "tags": []
+        },
+        {
+          "id": "cluely-20250611",
+          "title": "Cluely 20250611",
+          "file": "cluely-20250611.md",
+          "tags": []
+        },
+        {
+          "id": "codeium-windsurf-cascade-R1_20250201",
+          "title": "Codeium Windsurf Cascade R1 20250201",
+          "file": "codeium-windsurf-cascade-R1_20250201.md",
+          "tags": []
+        },
+        {
+          "id": "codeium-windsurf-cascade_20241206",
+          "title": "Codeium Windsurf Cascade 20241206",
+          "file": "codeium-windsurf-cascade_20241206.md",
+          "tags": []
+        },
+        {
+          "id": "colab-ai_20240108",
+          "title": "Colab Ai 20240108",
+          "file": "colab-ai_20240108.md",
+          "tags": []
+        },
+        {
+          "id": "colab-ai_20240511",
+          "title": "Colab Ai 20240511",
+          "file": "colab-ai_20240511.md",
+          "tags": []
+        },
+        {
+          "id": "cursor-ide-agent-claude-sonnet-3.7_20250309",
+          "title": "Cursor Ide Agent Claude Sonnet 3.7 20250309",
+          "file": "cursor-ide-agent-claude-sonnet-3.7_20250309.md",
+          "tags": []
+        },
+        {
+          "id": "cursor-ide-sonnet_20241224",
+          "title": "Cursor Ide Sonnet 20241224",
+          "file": "cursor-ide-sonnet_20241224.md",
+          "tags": []
+        },
+        {
+          "id": "deepseek-R1_20250430",
+          "title": "Deepseek R1 20250430",
+          "file": "deepseek-R1_20250430.md",
+          "tags": []
+        },
+        {
+          "id": "devv_20240427",
+          "title": "Devv 20240427",
+          "file": "devv_20240427.md",
+          "tags": []
+        },
+        {
+          "id": "discord-clyde_20230420",
+          "title": "Discord Clyde 20230420",
+          "file": "discord-clyde_20230420.md",
+          "tags": []
+        },
+        {
+          "id": "discord-clyde_20230519",
+          "title": "Discord Clyde 20230519",
+          "file": "discord-clyde_20230519.md",
+          "tags": []
+        },
+        {
+          "id": "discord-clyde_20230715",
+          "title": "Discord Clyde 20230715",
+          "file": "discord-clyde_20230715.md",
+          "tags": []
+        },
+        {
+          "id": "discord-clyde_20230716-1",
+          "title": "Discord Clyde 20230716 1",
+          "file": "discord-clyde_20230716-1.md",
+          "tags": []
+        },
+        {
+          "id": "discord-clyde_20230716-2",
+          "title": "Discord Clyde 20230716 2",
+          "file": "discord-clyde_20230716-2.md",
+          "tags": []
+        },
+        {
+          "id": "docker-gordon-ai_20250629",
+          "title": "Docker Gordon Ai 20250629",
+          "file": "docker-gordon-ai_20250629.md",
+          "tags": []
+        },
+        {
+          "id": "gandalf_20230919",
+          "title": "Gandalf 20230919",
+          "file": "gandalf_20230919.md",
+          "tags": []
+        },
+        {
+          "id": "github-copilot-chat_20230513",
+          "title": "Github Copilot Chat 20230513",
+          "file": "github-copilot-chat_20230513.md",
+          "tags": []
+        },
+        {
+          "id": "github-copilot-chat_20240930",
+          "title": "Github Copilot Chat 20240930",
+          "file": "github-copilot-chat_20240930.md",
+          "tags": []
+        },
+        {
+          "id": "google-gemini-1.5_20240411",
+          "title": "Google Gemini 1.5 20240411",
+          "file": "google-gemini-1.5_20240411.md",
+          "tags": []
+        },
+        {
+          "id": "google-gemini-cli_20250626",
+          "title": "Google Gemini Cli 20250626",
+          "file": "google-gemini-cli_20250626.md",
+          "tags": []
+        },
+        {
+          "id": "google-stitch_20250709",
+          "title": "Google Stitch 20250709",
+          "file": "google-stitch_20250709.md",
+          "tags": []
+        },
+        {
+          "id": "hooshang-20250717",
+          "title": "Hooshang 20250717",
+          "file": "hooshang-20250717.md",
+          "tags": []
+        },
+        {
+          "id": "manus_20250309",
+          "title": "Manus 20250309",
+          "file": "manus_20250309.md",
+          "tags": []
+        },
+        {
+          "id": "manus_20250310",
+          "title": "Manus 20250310",
+          "file": "manus_20250310.md",
+          "tags": []
+        },
+        {
+          "id": "meta-ai-whatsapp_20250819",
+          "title": "Meta Ai Whatsapp 20250819",
+          "file": "meta-ai-whatsapp_20250819.md",
+          "tags": []
+        },
+        {
+          "id": "microsoft-bing-chat_20230209",
+          "title": "Microsoft Bing Chat 20230209",
+          "file": "microsoft-bing-chat_20230209.md",
+          "tags": []
+        },
+        {
+          "id": "microsoft-copilot_20240310",
+          "title": "Microsoft Copilot 20240310",
+          "file": "microsoft-copilot_20240310.md",
+          "tags": []
+        },
+        {
+          "id": "microsoft-copilot_20241219",
+          "title": "Microsoft Copilot 20241219",
+          "file": "microsoft-copilot_20241219.md",
+          "tags": []
+        },
+        {
+          "id": "mistral-le-chat-pro-20250425",
+          "title": "Mistral Le Chat Pro 20250425",
+          "file": "mistral-le-chat-pro-20250425.md",
+          "tags": []
+        },
+        {
+          "id": "moonshot-kimi-chat_20241106",
+          "title": "Moonshot Kimi Chat 20241106",
+          "file": "moonshot-kimi-chat_20241106.md",
+          "tags": []
+        },
+        {
+          "id": "naver-cue_20230920",
+          "title": "Naver Cue 20230920",
+          "file": "naver-cue_20230920.md",
+          "tags": []
+        },
+        {
+          "id": "notion-ai_20221228",
+          "title": "Notion Ai 20221228",
+          "file": "notion-ai_20221228.md",
+          "tags": []
+        },
+        {
+          "id": "openai-assistants-api_20231106",
+          "title": "Openai Assistants Api 20231106",
+          "file": "openai-assistants-api_20231106.md",
+          "tags": []
+        },
+        {
+          "id": "openai-chatgpt-ios_20230614",
+          "title": "Openai Chatgpt Ios 20230614",
+          "file": "openai-chatgpt-ios_20230614.md",
+          "tags": []
+        },
+        {
+          "id": "openai-chatgpt4-android_20240207",
+          "title": "Openai Chatgpt4 Android 20240207",
+          "file": "openai-chatgpt4-android_20240207.md",
+          "tags": []
+        },
+        {
+          "id": "openai-chatgpt4o-mini-voice-mode_20250706",
+          "title": "Openai Chatgpt4O Mini Voice Mode 20250706",
+          "file": "openai-chatgpt4o-mini-voice-mode_20250706.md",
+          "tags": []
+        },
+        {
+          "id": "openai-chatgpt4o_20240520",
+          "title": "Openai Chatgpt4O 20240520",
+          "file": "openai-chatgpt4o_20240520.md",
+          "tags": []
+        },
+        {
+          "id": "openai-chatgpt4o_20250324",
+          "title": "Openai Chatgpt4O 20250324",
+          "file": "openai-chatgpt4o_20250324.md",
+          "tags": []
+        },
+        {
+          "id": "openai-chatgpt4o_20250506",
+          "title": "Openai Chatgpt4O 20250506",
+          "file": "openai-chatgpt4o_20250506.md",
+          "tags": []
+        },
+        {
+          "id": "openai-chatgpt5_20250807",
+          "title": "Openai Chatgpt5 20250807",
+          "file": "openai-chatgpt5_20250807.md",
+          "tags": []
+        },
+        {
+          "id": "openai-chatgpt5_20250808",
+          "title": "Openai Chatgpt5 20250808",
+          "file": "openai-chatgpt5_20250808.md",
+          "tags": []
+        },
+        {
+          "id": "openai-chatgpt_20221201",
+          "title": "Openai Chatgpt 20221201",
+          "file": "openai-chatgpt_20221201.md",
+          "tags": []
+        },
+        {
+          "id": "openai-dall-e-3_20231007-1",
+          "title": "Openai Dall E 3 20231007 1",
+          "file": "openai-dall-e-3_20231007-1.md",
+          "tags": []
+        },
+        {
+          "id": "openai-dall-e-3_20231007-2",
+          "title": "Openai Dall E 3 20231007 2",
+          "file": "openai-dall-e-3_20231007-2.md",
+          "tags": []
+        },
+        {
+          "id": "openai-deep-research_20250204",
+          "title": "Openai Deep Research 20250204",
+          "file": "openai-deep-research_20250204.md",
+          "tags": []
+        },
+        {
+          "id": "opera-aria_20230617",
+          "title": "Opera Aria 20230617",
+          "file": "opera-aria_20230617.md",
+          "tags": []
+        },
+        {
+          "id": "perplexity.ai_20221208",
+          "title": "Perplexity.Ai 20221208",
+          "file": "perplexity.ai_20221208.md",
+          "tags": []
+        },
+        {
+          "id": "perplexity.ai_20240311",
+          "title": "Perplexity.Ai 20240311",
+          "file": "perplexity.ai_20240311.md",
+          "tags": []
+        },
+        {
+          "id": "perplexity.ai_20240513",
+          "title": "Perplexity.Ai 20240513",
+          "file": "perplexity.ai_20240513.md",
+          "tags": []
+        },
+        {
+          "id": "perplexity.ai_20240607",
+          "title": "Perplexity.Ai 20240607",
+          "file": "perplexity.ai_20240607.md",
+          "tags": []
+        },
+        {
+          "id": "perplexity.ai_20250112",
+          "title": "Perplexity.Ai 20250112",
+          "file": "perplexity.ai_20250112.md",
+          "tags": []
+        },
+        {
+          "id": "perplexity.ai_gpt4_20240311",
+          "title": "Perplexity.Ai Gpt4 20240311",
+          "file": "perplexity.ai_gpt4_20240311.md",
+          "tags": []
+        },
+        {
+          "id": "perplexity.ai_telegramBot_20250822",
+          "title": "Perplexity.Ai Telegrambot 20250822",
+          "file": "perplexity.ai_telegramBot_20250822.md",
+          "tags": []
+        },
+        {
+          "id": "phind_20240427",
+          "title": "Phind 20240427",
+          "file": "phind_20240427.md",
+          "tags": []
+        },
+        {
+          "id": "proton-lumo_20250724",
+          "title": "Proton Lumo 20250724",
+          "file": "proton-lumo_20250724.md",
+          "tags": []
+        },
+        {
+          "id": "proton-lumo_20250727",
+          "title": "Proton Lumo 20250727",
+          "file": "proton-lumo_20250727.md",
+          "tags": []
+        },
+        {
+          "id": "remoteli-io_20230806",
+          "title": "Remoteli Io 20230806",
+          "file": "remoteli-io_20230806.md",
+          "tags": []
+        },
+        {
+          "id": "roblox-studio-assistant_20240320",
+          "title": "Roblox Studio Assistant 20240320",
+          "file": "roblox-studio-assistant_20240320.md",
+          "tags": []
+        },
+        {
+          "id": "scamguard-malwarebytes_20250608",
+          "title": "Scamguard Malwarebytes 20250608",
+          "file": "scamguard-malwarebytes_20250608.md",
+          "tags": []
+        },
+        {
+          "id": "snap-myai_20230430",
+          "title": "Snap Myai 20230430",
+          "file": "snap-myai_20230430.md",
+          "tags": []
+        },
+        {
+          "id": "v0_20250306",
+          "title": "V0 20250306",
+          "file": "v0_20250306.md",
+          "tags": []
+        },
+        {
+          "id": "wrtn-gpt3.5_20240215",
+          "title": "Wrtn Gpt3.5 20240215",
+          "file": "wrtn-gpt3.5_20240215.md",
+          "tags": []
+        },
+        {
+          "id": "wrtn-gpt4_20240215",
+          "title": "Wrtn Gpt4 20240215",
+          "file": "wrtn-gpt4_20240215.md",
+          "tags": []
+        },
+        {
+          "id": "wrtn_20230603",
+          "title": "Wrtn 20230603",
+          "file": "wrtn_20230603.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok2_20241218",
+          "title": "Xai Grok2 20241218",
+          "file": "xAI-grok2_20241218.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok2_20250111",
+          "title": "Xai Grok2 20250111",
+          "file": "xAI-grok2_20250111.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok3_20250223",
+          "title": "Xai Grok3 20250223",
+          "file": "xAI-grok3_20250223.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok3_20250423",
+          "title": "Xai Grok3 20250423",
+          "file": "xAI-grok3_20250423.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok3_20250504",
+          "title": "Xai Grok3 20250504",
+          "file": "xAI-grok3_20250504.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok3_20250509",
+          "title": "Xai Grok3 20250509",
+          "file": "xAI-grok3_20250509.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok3_20250605",
+          "title": "Xai Grok3 20250605",
+          "file": "xAI-grok3_20250605.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok_20240307",
+          "title": "Xai Grok 20240307",
+          "file": "xAI-grok_20240307.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok_20241003",
+          "title": "Xai Grok 20241003",
+          "file": "xAI-grok_20241003.md",
+          "tags": []
+        },
+        {
+          "id": "xAI-grok_telegramBot_20250823",
+          "title": "Xai Grok Telegrambot 20250823",
+          "file": "xAI-grok_telegramBot_20250823.md",
+          "tags": []
         }
-      ]
-    }
-    ,
-    {
-      "id": "demo-ladder",
-      "title": "Demo Ladder",
-      "description": "Five super-easy prompts for system smoke tests.",
-      "basePath": "challenges/demo-ladder",
-      "prompts": [
-        { "id": "demo-level-1", "title": "Demo Level 1 — Echo Refusal", "file": "level-1.md", "tags": ["demo", "refusal"] },
-        { "id": "demo-level-2", "title": "Demo Level 2 — Secret Word", "file": "level-2.md", "tags": ["demo", "secrets"] },
-        { "id": "demo-level-3", "title": "Demo Level 3 — Sanitise Numbers", "file": "level-3.md", "tags": ["demo", "redaction"] },
-        { "id": "demo-level-4", "title": "Demo Level 4 — Policy Parrot", "file": "level-4.md", "tags": ["demo", "policy"] },
-        { "id": "demo-level-5", "title": "Demo Level 5 — Lore Keeper", "file": "level-5.md", "tags": ["demo", "roleplay"] }
       ]
     }
   ]
