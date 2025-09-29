@@ -312,7 +312,7 @@ const renderCatalog = () => {
             </div>
           </div>
           <div class="prompt-card__cta">
-            ${prompt.rawUrl ? `<a class="button-secondary" href="${prompt.rawUrl}" target="_blank" rel="noopener">View File</a>` : ""}
+            ${prompt.rawUrl ? `<a class="button-secondary" href="${prompt.rawUrl}">View File</a>` : ""}
             <button type="button" data-open-chat="${prompt.id}">Open Chat</button>
           </div>
         `;
